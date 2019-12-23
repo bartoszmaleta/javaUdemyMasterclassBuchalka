@@ -14,8 +14,21 @@ public class ByteShortIntLong {
         // Integer Maximum Value = 2147483647
 
         System.out.println("Busted MAX value = " + (myMaxIntValue + 1));
-        // Its overfloat
+        // Its OVERFLOW
         // Busted MAX value = -2147483648
+        
+
+        System.out.println("Busted MIN value = " + (myMinIntValue - 1));
+        // UNDERFLOW
+        // Busted MIN value = 2147483647
+
+        int myMaxIntTest = 2147483647;
+        // int myMaxIntTest2 = 2147483648;   // It will give us an error
+
+        int myMaxIntTest3 = 2_147_483_647;
+
+        System.out.println(myMaxIntTest3);
+
     }
 
 }
