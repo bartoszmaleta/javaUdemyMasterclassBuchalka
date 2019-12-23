@@ -1,6 +1,6 @@
 package app;
 
-public class App {
+public class HelloWorld {
     public static void main(String[] args) throws Exception {
         System.out.println("Hello Bartosz");
 
@@ -16,8 +16,8 @@ public class App {
 
         System.out.println(myTotal);
 
-        int myLastOne = myTotal - 1000;
+        int myLastOne = 1000 - myTotal;
         System.out.println(myLastOne);
 
-    }
+    } 
 }
