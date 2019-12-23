@@ -2,6 +2,7 @@ package app;
 
 public class ByteShortIntLong {
     public static void main(String[] args) {
+        System.out.println("---------------------------");
 
         int myValue = 10000;
 
@@ -45,6 +46,8 @@ public class ByteShortIntLong {
 
         System.out.println("Short Minimum Value = " + (myMinShortValue));
         System.out.println("Short Maximum Value = " + (myMaxShortValue));
+
+        System.out.println("---------------------------");
 
     }
 
