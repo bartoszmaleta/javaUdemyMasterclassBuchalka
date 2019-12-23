@@ -10,7 +10,12 @@ public class ByteShortIntLong {
 
         System.out.println("Integer Minimum Value = " + myMinIntValue);
         System.out.println("Integer Maximum Value = " + myMaxIntValue);
-        
+        // Integer Minimum Value = -2147483648
+        // Integer Maximum Value = 2147483647
+
+        System.out.println("Busted MAX value = " + (myMaxIntValue + 1));
+        // Its overfloat
+        // Busted MAX value = -2147483648
     }
 
 }
