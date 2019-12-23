@@ -29,6 +29,12 @@ public class ByteShortIntLong {
 
         System.out.println(myMaxIntTest3);
 
+        byte myMinByteValue = Byte.MIN_VALUE;
+        byte myMaxByteValue = Byte.MAX_VALUE;
+
+        System.out.println("Byte Minimum Value = " + (myMinByteValue));
+        System.out.println("Byte Maximum Value = " + (myMaxByteValue));
+
     }
 
 }
