@@ -17,6 +17,13 @@ public class FloatAndDouble {
 
         System.out.println("---------------------------");
 
+        int myIntValue = 5;
+        float myFloatValue = 5.25f;    // "5f" ----> good practice
+        // float myFloatValue = 5.25;  // without "f" we will get an error, require a double
+        double myDoubleValue = 5.25d;  // "5d" ----> good practice
+
+        System.out.println("---------------------------");
+        
 
     }
 }
