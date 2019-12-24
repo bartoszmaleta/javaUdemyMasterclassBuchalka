@@ -45,8 +45,20 @@ public class FloatAndDouble {
 
         System.out.println("---------------------------");
         
+        double numberOfPounds = 130d;
+        double poundsInKilograms = 0.45359237d;
+        double resultInKilograms = numberOfPounds * poundsInKilograms;
+
+        System.out.println("Converted pounds: " + resultInKilograms);
+
+        double pi = 3.1415927d;
+        double anotherNumber = 3_000_000.4_567_890d;
+        System.out.println(pi);
+        System.out.println(anotherNumber);
+        System.out.println(resultInKilograms);
         
 
+ 
 
     }
 }
