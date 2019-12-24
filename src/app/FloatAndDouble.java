@@ -57,8 +57,9 @@ public class FloatAndDouble {
         System.out.println(anotherNumber);
         System.out.println(resultInKilograms);
         
-
- 
-
+        // BigDecimal recommended for precise calculations
+        // For example currency calculations
+        
+        
     }
 }
