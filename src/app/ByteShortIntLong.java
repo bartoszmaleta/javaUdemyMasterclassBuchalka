@@ -49,6 +49,24 @@ public class ByteShortIntLong {
 
         System.out.println("---------------------------");
 
+
+        long myLongValue = 100L;
+        long myMinLongValue = Long.MIN_VALUE;
+        long myMaxLongValue = Long.MAX_VALUE;
+
+        System.out.println("Long Minimum Value = " + (myMinLongValue));
+        System.out.println("Long Maximum Value = " + (myMaxLongValue));
+
+        long bigLongLiteralValue = 2_147_483_647_234L;
+        // long bigLongLiteralValue = 2_147_483_647_234;  // need L in the end
+        // convert int to long
+
+        short bigShortLiteralValue = 32767;
+        // short bigShortLiteralValue = 32768;  // out of range of short
+        
+        System.out.println("---------------------------");
+
+
     }
 
 }
