@@ -96,6 +96,9 @@ public class ByteShortIntLong {
 
         System.out.println("---------------------------");
 
+        // short shortTotal = (1000 + 10 * (variableByte + variableShort + variableInt));  // expect short
+        short shortTotal = (short) (1000 + 10 * (variableByte + variableShort + variableInt));
+
         
 
     }
