@@ -24,6 +24,8 @@ public class FloatAndDouble {
 
         System.out.println("---------------------------");
         
+        // float variableFloat = 6.32;     // error to repair ---> CHALLENGE
+        float variableFloat = (float) 6.32;
 
     }
 }
