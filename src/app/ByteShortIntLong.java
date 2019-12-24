@@ -67,6 +67,18 @@ public class ByteShortIntLong {
         System.out.println("---------------------------");
 
 
+        int myTotal = (myMinIntValue / 2);
+        // byte myNewByteValue = (myMinByteValue / 2);   // error expect int
+        // int is used by default
+
+        byte myNewByteValue = (byte) (myMinByteValue / 2);
+
+        short myNewShortValue = (short) (myMinShortValue / 2);
+
+        System.out.println("---------------------------");
+        
+        
+
     }
 
 }
