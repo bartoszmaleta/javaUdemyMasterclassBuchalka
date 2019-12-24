@@ -77,6 +77,25 @@ public class ByteShortIntLong {
 
         System.out.println("---------------------------");
         
+        byte variableByte = 100;
+        short variableShort = 200;
+        int variableInt = 300;
+        long variableLong = 50000L + 10L * (variableByte + variableShort + variableInt);
+        // long variable need to casting 
+
+        // There are specific suffixes for long (e.g. 39832L), float (e.g. 2.4f) 
+        // and double (e.g. -7.832d).
+        // If there is no suffix, and it is an integral type (e.g. 5623), 
+        // it is assumed to be an int. If it is not an integral type (e.g. 3.14159), 
+        // it is assumed to be a double.
+        // 
+        // In all other cases (byte, short, char), you need the 
+        // cast as there is no specific suffix.
+
+        System.out.println(variableLong);
+
+        System.out.println("---------------------------");
+
         
 
     }
