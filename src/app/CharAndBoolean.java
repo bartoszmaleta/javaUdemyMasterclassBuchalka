@@ -18,6 +18,7 @@ public class CharAndBoolean {
         boolean myTrueBooleanValue = true;
         boolean myFalseBooleanValue = false;
 
+        boolean isCustomerOverTwentyOne = true;
 
 
     }
