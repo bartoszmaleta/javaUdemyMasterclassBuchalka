@@ -28,6 +28,25 @@ public class FloatAndDouble {
         float variableFloat = (float) 6.32; // not recommended
         float variableFloatWithF = 6.32f; // recommended
 
+        System.out.println("---------------------------");
+
+        int variableInt = 5 / 3;   // result is 2
+        float myVariableFloat = 5f / 3f;
+        double variableDouble = 5d / 3d;
+        double variableDouble2 = 5.00 / 3.00;   // the same as above 
+
+        // MyFloatValue = 1.6666666
+        // MyDoubleValue = 1.6666666666666667
+
+        System.out.println("MyIntValue = " + variableInt);
+        System.out.println("MyFloatValue = " + myVariableFloat);
+        System.out.println("MyDoubleValue = " + variableDouble);
+        System.out.println("MyDoubleValue2 = " + variableDouble2);
+
+        System.out.println("---------------------------");
+        
+        
+
 
     }
 }
