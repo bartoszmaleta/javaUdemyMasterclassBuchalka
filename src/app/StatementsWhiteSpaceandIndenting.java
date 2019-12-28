@@ -11,5 +11,8 @@ public class StatementsWhiteSpaceandIndenting {
         System.out.println("This is" + 
         " another " + 
         "still more.");
+
+        int anotherVariable = 50; myVariable--; System.out.println("This is another one");
+
     }
 }
