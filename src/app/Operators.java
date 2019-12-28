@@ -59,5 +59,36 @@ public class Operators {
 
         }
 
+        System.out.println("---------------------------");
+
+        int newValue = 50;
+        if (newValue == 50) {
+            System.out.println("This is true");
+        }
+
+        System.out.println("---------------------------");
+
+        boolean isCar = false;
+        if (isCar == true) {
+            System.out.println("This is not supposed to happen");
+        }
+
+        isCar = true;
+        boolean wasCar = isCar ? true : false;
+        // means is isCar equal to true? 
+        // if it is, i wanna set our wasCar variable to true
+        // otherwise set to false 
+        if (wasCar) {
+            System.out.println("wasCar is true");
+        }
+
+        System.out.println("---------------------------");
+
+        int ageOfClient = 20;
+        boolean isEighteenOrOver = ageOfClient == 20 ? true : false;
+
+        if (isEighteenOrOver == true) {
+            System.out.println("Over 18");
+        }
     }
 }
