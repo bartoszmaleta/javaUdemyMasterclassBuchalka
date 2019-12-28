@@ -14,7 +14,7 @@ public class Operators {
         
         result = result - 1;
         System.out.println("3 - 1 = " + result);
-        System.out.println("previousResult = " + previousResult);)
+        System.out.println("previousResult = " + previousResult);
     
         System.out.println("---------------------------");
         
