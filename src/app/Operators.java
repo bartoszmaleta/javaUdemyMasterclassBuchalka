@@ -90,5 +90,25 @@ public class Operators {
         if (isEighteenOrOver == true) {
             System.out.println("Over 18");
         }
+
+        System.out.println("---------------------------");
+
+        double myDouble = 20.00d;
+        double mySecondDouble = 80.00d;
+        double resultDouble = (myDouble + mySecondDouble) * 100.00d;
+        System.out.println("MyValuesTotal = " + resultDouble);
+        
+        double moduleResult = resultDouble % 40.00d;
+        System.out.println("The remainder = " + moduleResult);
+
+        boolean isNoRemainder = (moduleResult == 0) ? true : false;
+        System.out.println("isNoRemainder = " + isNoRemainder);
+
+        if (!isNoRemainder) {
+            System.out.println("Got some remainder");
+        }
+
+        System.out.println("---------------------------");
+
     }
 }
