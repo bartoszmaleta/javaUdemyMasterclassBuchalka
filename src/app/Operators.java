@@ -18,6 +18,20 @@ public class Operators {
     
         System.out.println("---------------------------");
         
-        
+        result = result * 10;
+        System.out.println("2 * 10 = " + result);
+
+        System.out.println("---------------------------");
+
+        result = result / 5;
+        System.out.println("20 / 5 = " + result);
+
+        System.out.println("---------------------------");
+
+        result = result % 3;
+        System.out.println("3 % 3 = " + result);
+
+        System.out.println("---------------------------");
+
     }
 }
