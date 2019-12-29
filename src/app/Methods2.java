@@ -11,7 +11,8 @@ public class Methods2 {
 
         System.out.println("---------------------------");
         
-        calculateScore(gameOver, score, levelCompleted, bonus);
+        int highScore = calculateScore(gameOver, score, levelCompleted, bonus);
+        System.out.println("Your final score was " + highScore);
 
         System.out.println("---------------------------");
 
@@ -20,14 +21,15 @@ public class Methods2 {
         levelCompleted = 4;
         bonus = 200;
 
-        calculateScore(gameOver, score, levelCompleted, bonus);
+        highScore = calculateScore(gameOver, score, levelCompleted, bonus);
+        System.out.println("Your final score was " + highScore);
+
     }
 
     public static int calculateScore(boolean gameOver, int score, int levelCompleted, int bonus) {
         if (gameOver) {
             int finalScore = score + (levelCompleted * bonus);
             finalScore += 1000;
-            System.out.println("Your final score was " + finalScore);
 
             return finalScore;
         // } return -1;     // ANOTHER OPTION
