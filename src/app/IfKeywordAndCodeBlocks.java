@@ -17,8 +17,34 @@ public class IfKeywordAndCodeBlocks {
 
         if (gameOver) {
             int finalScore = score + (levelCompleted * bonus);
+            finalScore += 100;
             System.out.println("Your final score was " + finalScore);
         }
+
+        System.out.println("---------------------------");
+
+        score = 10000;
+        levelCompleted = 8;
+        bonus = 200;
+
+        if (gameOver) {
+            int finalScore2 = score + (levelCompleted * bonus);
+            System.out.println("Your second final score was " + finalScore2);
+        }
+
+        System.out.println("---------------------------");
+        
+        boolean newGameOver = true;
+        int newScore = 10000;
+        int newLevelCompleted = 8;
+        int newBonus = 200;
+
+        if (newGameOver) {
+            int finalScore2 = newScore + (newLevelCompleted * newBonus);
+            System.out.println("Your second final score was " + finalScore2);
+        }
+
+
 
     }
 }
