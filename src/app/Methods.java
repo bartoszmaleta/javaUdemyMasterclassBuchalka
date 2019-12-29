@@ -3,11 +3,6 @@ package app;
 public class Methods {
     public static void main(String[] args) {
         System.out.println("---------------------------");
-
-        boolean gameOver = true;
-        int score = 800;
-        int levelCompleted = 5;
-        int bonus = 100;
  
         calculateScore(true, 800, 5, 100);
 
