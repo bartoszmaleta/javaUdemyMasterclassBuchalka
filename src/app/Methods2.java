@@ -10,7 +10,7 @@ public class Methods2 {
         int bonus = 400;
 
         System.out.println("---------------------------");
-        
+
         int highScore = calculateScore(gameOver, score, levelCompleted, bonus);
         System.out.println("Your final score was " + highScore);
 
@@ -34,7 +34,7 @@ public class Methods2 {
 
         highScorePosition = calculateHighScorePosition(400);
         displayHighScorePosition("Bartosz400", highScorePosition);
-        
+
         highScorePosition = calculateHighScorePosition(50);
         displayHighScorePosition("Bartosz50", highScorePosition);
 
@@ -55,26 +55,40 @@ public class Methods2 {
             finalScore += 1000;
 
             return finalScore;
-        // } return -1;     // ANOTHER OPTION
-        }  else {
+            // } return -1; // ANOTHER OPTION
+        } else {
             return -1;
         }
     }
-    
+
     public static void displayHighScorePosition(String playerName, int positionOnHighScoreTable) {
-        System.out.println(playerName + " managed to get into position " 
-        + positionOnHighScoreTable + " on the high score table.");
+        System.out.println(
+                playerName + " managed to get into position " + positionOnHighScoreTable + " on the high score table.");
     }
 
     public static int calculateHighScorePosition(int playerScore) {
         if (playerScore >= 1000) {
             return 1;
-        } else if ((playerScore >= 500) && (playerScore < 1000)) {
+        } else if (playerScore >= 500) {
             return 2;
-        } else if ((playerScore >= 100) && (playerScore < 500)) {
+        } else if (playerScore >= 100) {
             return 3;
+            // } return 4;
         } else {
             return 4;
         }
+    }
+
+    public static int alternativeCalculateHighScorePosition(int playerScore) {
+        int position = 4;
+
+        if (playerScore >= 1000) {
+            position = 1;
+        } else if (playerScore >= 500) {
+            position = 2;
+        } else if (playerScore >= 100) {
+            position = 3;
+        }
+        return position;
     }
 }
