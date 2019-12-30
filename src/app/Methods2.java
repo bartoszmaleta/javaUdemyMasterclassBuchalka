@@ -26,12 +26,26 @@ public class Methods2 {
 
         System.out.println("---------------------------");
 
-        displayHighScorePosition("Bartosz", 6);
+        int highScorePosition = calculateHighScorePosition(1500);
+        displayHighScorePosition("Bartosz1500", highScorePosition);
 
-        calculateHighScorePosition(1500);
-        calculateHighScorePosition(900);
-        calculateHighScorePosition(400);
-        calculateHighScorePosition(50);
+        highScorePosition = calculateHighScorePosition(900);
+        displayHighScorePosition("Bartosz900", highScorePosition);
+
+        highScorePosition = calculateHighScorePosition(400);
+        displayHighScorePosition("Bartosz400", highScorePosition);
+        
+        highScorePosition = calculateHighScorePosition(50);
+        displayHighScorePosition("Bartosz50", highScorePosition);
+
+        highScorePosition = calculateHighScorePosition(1000);
+        displayHighScorePosition("Bartosz1000", highScorePosition);
+
+        highScorePosition = calculateHighScorePosition(500);
+        displayHighScorePosition("Bartosz500", highScorePosition);
+
+        highScorePosition = calculateHighScorePosition(100);
+        displayHighScorePosition("Bartosz100", highScorePosition);
 
     }
 
@@ -48,15 +62,16 @@ public class Methods2 {
     }
     
     public static void displayHighScorePosition(String playerName, int positionOnHighScoreTable) {
-        System.out.println(playerName + " managed to get into position " + positionOnHighScoreTable + " on the high score table.");
+        System.out.println(playerName + " managed to get into position " 
+        + positionOnHighScoreTable + " on the high score table.");
     }
 
     public static int calculateHighScorePosition(int playerScore) {
-        if (playerScore > 1000) {
+        if (playerScore >= 1000) {
             return 1;
-        } else if ((playerScore > 500) && (playerScore < 1000)) {
+        } else if ((playerScore >= 500) && (playerScore < 1000)) {
             return 2;
-        } else if ((playerScore > 100) && (playerScore < 500)) {
+        } else if ((playerScore >= 100) && (playerScore < 500)) {
             return 3;
         } else {
             return 4;
