@@ -3,7 +3,7 @@ package app;
 import java.math.RoundingMode;
 import java.text.DecimalFormat;
 
-public class DecimalComparatorCleanVersion2 {
+public class DecimalComparatorDiffVersioneNotCorrect{
     public static boolean areEqualByThreeDecimalPlaces(double firstNumber, double secondNumber) {
 
         System.out.println("========================");
@@ -11,14 +11,6 @@ public class DecimalComparatorCleanVersion2 {
         System.out.println("secondNumber               = " + secondNumber);
 
         // firstNumber:
-        String firstNumberString = String.valueOf(firstNumber);
-        if (firstNumberString.length() < 50) {
-            String cutFirstNumber = firstNumberString.substring(0, 5);
-            System.out.println("cut number" + cutFirstNumber);
-        }
-
-
-
         DecimalFormat firstNumberRounded = new DecimalFormat("#.###");
         firstNumberRounded.setRoundingMode(RoundingMode.CEILING);
         System.out.println("firstNumberRounded = " + firstNumberRounded.format(firstNumber));
