@@ -11,20 +11,31 @@ public class TeenNumberChecker {
     }
 
     public static boolean isTeen(int ageOfTeen) {
+        if ((ageOfTeen >= 13) && (ageOfTeen <= 19)) {
+            return true;
+        } else {
+            return false;
+        }
         
-        
-        return true;
+        // return true;
     }
 
     public static void main(String[] args) {
-        boolean checkingAge = hasTeen(9, 99, 19);
-        System.out.println(checkingAge);
+        boolean checkingIfHasTeen = hasTeen(9, 99, 19);
+        System.out.println(checkingIfHasTeen);
 
-        boolean checkingAge2 = hasTeen(23, 15, 42);
-        System.out.println(checkingAge2);
+        boolean checkingIfHasTeen2 = hasTeen(23, 15, 42);
+        System.out.println(checkingIfHasTeen2);
 
-        boolean checkingAge3 = hasTeen(22, 23, 34);
-        System.out.println(checkingAge3);
+        boolean checkingIfHasTeen3 = hasTeen(22, 23, 34);
+        System.out.println(checkingIfHasTeen3);
+
+        boolean checkIfIsTeen = isTeen(9);
+        System.out.println(checkIfIsTeen);
+
+        boolean checkIfIsTeen2 = isTeen(13);
+        System.out.println(checkIfIsTeen2);
+
 
     }
 }
