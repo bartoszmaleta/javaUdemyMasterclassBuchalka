@@ -3,15 +3,15 @@ package app;
 public class SecondsAndMinutesChallenge {
     public static void main(String[] args) {
 
-        String calculatedMinutesAndSeconds = getDurationString(110, 2);
+        String calculatedMinutesAndSeconds = getDurationString(65, 45);
         System.out.println(calculatedMinutesAndSeconds);
 
-        String calculatedMinutesAndSecondsFromSecondsOnly = getDurationString(110);
+        String calculatedMinutesAndSecondsFromSecondsOnly = getDurationString(3945);
         System.out.println(calculatedMinutesAndSecondsFromSecondsOnly);
     }
 
     public static String getDurationString(int minutes, int seconds) {
-        if ((minutes < 0) || (seconds < 0 || seconds >= 60)) {
+        if ((minutes < 0) || (seconds < 0) || (seconds >= 60)) {
             String invalidValueMessage = "Invalid values";
             return invalidValueMessage;
         }
