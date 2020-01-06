@@ -1,6 +1,8 @@
 package app;
 
 public class SecondsAndMinutesChallenge {
+    private static final String INVALID_VALUE_MESSAGE = "Invalid value";
+
     public static void main(String[] args) {
 
         String calculatedMinutesAndSeconds = getDurationString(650, 45);
@@ -12,8 +14,7 @@ public class SecondsAndMinutesChallenge {
 
     public static String getDurationString(int minutes, int seconds) {
         if ((minutes < 0) || (seconds < 0) || (seconds >= 60)) {
-            String invalidValueMessage = "Invalid values";
-            return invalidValueMessage;
+            return INVALID_VALUE_MESSAGE;
         }
 
         // To make seconds like minutes!
@@ -57,8 +58,7 @@ public class SecondsAndMinutesChallenge {
 
     public static String getDurationString(int seconds) {
         if (seconds < 0) {
-            String invalidValueMessage = "Invalid values";
-            return invalidValueMessage;
+            return INVALID_VALUE_MESSAGE;
         }
 
         int minutes = seconds / 60;
