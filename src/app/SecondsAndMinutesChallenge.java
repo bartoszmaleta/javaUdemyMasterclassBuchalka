@@ -3,7 +3,7 @@ package app;
 public class SecondsAndMinutesChallenge {
     public static void main(String[] args) {
 
-        String calculatedMinutesAndSeconds = getDurationString(65, 45);
+        String calculatedMinutesAndSeconds = getDurationString(650, 45);
         System.out.println(calculatedMinutesAndSeconds);
 
         String calculatedMinutesAndSecondsFromSecondsOnly = getDurationString(3945);
@@ -24,14 +24,35 @@ public class SecondsAndMinutesChallenge {
         int remainingSeconds = seconds % 60;
         int remainingMinutes = minutes % 60;
 
+        String hoursString = minutesToHours + "h ";
         if (minutesToHours < 10) {
-            String resultString = ("0" + minutesToHours + "h " + remainingMinutes + "m " + remainingSeconds + "s");
-            return resultString;
-
-        } else {
-            String resultString = (minutesToHours + "h " + remainingMinutes + "m " + remainingSeconds + "s");
-            return resultString;
+            hoursString = "0" + hoursString;
         }
+
+        String minutesString = remainingMinutes + "m ";
+        if (remainingMinutes < 10) {
+            minutesString = "0" + minutesString;
+        }
+
+        String secondsString = remainingSeconds + "s ";
+        if (remainingSeconds < 10) {
+            secondsString = "0" + secondsString;
+        }
+
+        // String resultString = (minutesToHours + "h " + remainingMinutes + "m " + remainingSeconds + "s");
+        String resultString = (hoursString + minutesString + secondsString);
+
+        return resultString;
+
+// 
+        // if (minutesToHours < 10) {
+            // String resultString = ("0" + minutesToHours + "h " + remainingMinutes + "m " + remainingSeconds + "s");
+            // return resultString;
+// 
+        // } else {
+            // String resultString = (minutesToHours + "h " + remainingMinutes + "m " + remainingSeconds + "s");
+            // return resultString;
+        // }
     }
 
     public static String getDurationString(int seconds) {
