@@ -12,11 +12,18 @@ public class MethodOverloading {
 
         calculateScore();
 
-        double inchesThirteen = calcFeetAndInchesToCentimeters(13);
+        System.out.println("--------------------------");
+
+        double inchesThirteen = calcFeetAndInchesToCentimeters(-10);
         System.out.println(inchesThirteen);
 
         double inchesAndFeet = calcFeetAndInchesToCentimeters(6, 0);
         System.out.println(inchesAndFeet);
+
+        System.out.println("--------------------------");
+
+
+
     }
 
     public static int calculateScore(String playerName, int score) {
@@ -78,5 +85,18 @@ public class MethodOverloading {
         System.out.println(inches + " inches is euqal to " + feetInInches + " feet and " + remainingInches + " inches");
         return calcFeetAndInchesToCentimeters(feetInInches, remainingInches);
     }
+
+    public static int sum(int a, int b) {
+        return a + b;
+    }
+
+    public static int sum(int a, int b, int c) {
+        return a + b + c;
+    }
+
+    public static int sum(int a, int b, int c, int d) {
+        return a + b + c + d;
+    }
+
 
 }
