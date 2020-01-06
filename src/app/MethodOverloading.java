@@ -76,7 +76,7 @@ public class MethodOverloading {
         double feetInInches = (int) inches / 12;
         double remainingInches = (int) inches % 12;
         System.out.println(inches + " inches is euqal to " + feetInInches + " feet and " + remainingInches + " inches");
-        return feetInInches;
+        return calcFeetAndInchesToCentimeters(feetInInches, remainingInches);
     }
 
 }
