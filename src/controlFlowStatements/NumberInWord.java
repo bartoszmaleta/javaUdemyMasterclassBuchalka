@@ -42,7 +42,6 @@ public class NumberInWord {
         default:
             System.out.println("OTHER");
             break;
-
         }
     }
 }
