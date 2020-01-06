@@ -52,6 +52,11 @@ public class MethodOverloading {
             return -1;
         }
 
+        // ONE LINE CONFIRMATION!!!! 
+        // if ((feet < 0) || ((inches < 0) || (inches > 12))) {
+        //     return -1;
+        // }
+
         double feetInInches = feet * 12;
 
         double resultInCentimeters = (inches + feetInInches) * 2.54;
