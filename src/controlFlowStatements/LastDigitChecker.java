@@ -10,6 +10,13 @@ public class LastDigitChecker {
 
         boolean checkIfNumbersHasSameLastDigit3 = hasSameLastDigit(9, 99, 999);
         System.out.println(checkIfNumbersHasSameLastDigit3);
+
+        System.out.println("------------------------");
+
+        System.out.println(isValid(10));
+        System.out.println(isValid(468));
+        System.out.println(isValid(1051));
+
     }
 
     public static boolean hasSameLastDigit (int firstNumber, int secondNumber, int thirdNumber) {
@@ -55,4 +62,11 @@ public class LastDigitChecker {
         }
     }
 
+    public static boolean isValid (int number) {
+        if (number < 10 || number > 1000) {
+            return false;
+        } else {
+            return true;
+        }
+    }
 }
