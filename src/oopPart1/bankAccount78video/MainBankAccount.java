@@ -1,4 +1,5 @@
 package oopPart1.bankAccount78video;
+// and 79 video
 
 public class MainBankAccount {
     public static void main(String[] args) {
@@ -47,7 +48,18 @@ public class MainBankAccount {
         BankAccount safeAccount = new BankAccount("Tim", "tim@email.com", "34234");
         System.out.println(safeAccount.getAccountNumber() + " name " + safeAccount.getCustomerName());
 
-        System.out.println("-------------------");
+        System.out.println("------------------- 79 Challenge");
+
+        VipCustomer customerVip1 = new VipCustomer();
+        System.out.println(customerVip1.getName());
+
+        VipCustomer customerVip2 = new VipCustomer("John", "johns@email.com");
+        System.out.println(customerVip2.getName());
+
+        VipCustomer customerVip3 = new VipCustomer("Tom", 130.00, "toms@email.com");
+        System.out.println(customerVip3.getName());
+        System.out.println(customerVip3.getCreditLimit());
+
 
     }
 }
