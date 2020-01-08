@@ -53,4 +53,16 @@ public class Person {
         }
     }
 
+    public String getFullName2() {
+        if (this.firstName.isEmpty() && this.lastName.isEmpty()) {
+            return "";
+        } else if (this.lastName.isEmpty()) {
+            return this.firstName;
+        } else if (this.firstName.isEmpty()) {
+            return this.lastName;
+        } else {
+            return (this.firstName + " " + this.lastName);
+        }
+    }
+
 }
