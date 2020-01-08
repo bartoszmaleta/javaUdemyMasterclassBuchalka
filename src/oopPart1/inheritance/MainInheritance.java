@@ -13,5 +13,8 @@ public class MainInheritance {
         Fish fish = new Fish("Shark", 15, 10, 4, 2, 5);
 
         fish.move(30);
+        fish.swim(3);
+        System.out.println(fish.getBrain());
+        System.out.println(fish.getName());
     }
 }
