@@ -9,6 +9,9 @@ public class MainInheritance {
         dog.eat();
         dog.walk();
         dog.run();
-        
+
+        Fish fish = new Fish("Shark", 15, 10, 4, 2, 5);
+
+        fish.move(30);
     }
 }

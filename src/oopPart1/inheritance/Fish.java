@@ -1,6 +1,6 @@
 package oopPart1.inheritance;
 
-public class Fish extends Animal{
+public class Fish extends Animal {
     private int gills;
     private int eyes;
     private int fins;
@@ -12,22 +12,22 @@ public class Fish extends Animal{
         this.fins = fins;
     }
 
-    private void rest() {
-
-    }
-    private void moveMuscles() {
-
+    public void rest() {
+        System.out.println("Fish.rest() called");
     }
 
-    private void moveBackFin() {
+    public void moveMuscles() {
+        System.out.println("Fish.moveMuscles() called");
+    }
+
+    public void moveBackFin() {
 
     }
-    private void swim(int speed) {
+
+    public void swim(int speed) {
         moveMuscles();
         moveBackFin();
         super.move(speed);
     }
-
-    
 
 }
