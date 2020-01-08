@@ -6,6 +6,9 @@ public class MainInheritance {
 
         Dog dog = new Dog("Yorkie", 8, 20, 2, 4, 1, 20, "long silky");
 
+        System.out.println(dog.getSize());
+        System.out.println(dog.getName());
+
         dog.eat();
         dog.walk();
         dog.run();
