@@ -9,5 +9,12 @@ public class Main {
 
         System.out.println("add = " + calculator.getAdditionResult());
         System.out.println("subtraction = " + calculator.getSubtractionResult());
+
+        calculator.setFirstNumber(5.25);
+        calculator.setSecondNumber(0);
+
+        System.out.println("multiply = " + calculator.getMultiplicationResult());
+        System.out.println("division = " + calculator.getDivisionResult());
+
     }
 }

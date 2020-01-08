@@ -21,22 +21,22 @@ public class SimpleCalculator {
     }
 
     public double getAdditionResult() {
-        return firstNumber + secondNumber;
+        return this.firstNumber + this.secondNumber;
     }
 
     public double getSubtractionResult() {
-        return firstNumber - secondNumber;
+        return this.firstNumber - this.secondNumber;
     }
 
     public double getMultiplicationResult() {
-        return firstNumber * secondNumber;
+        return this.firstNumber * this.secondNumber;
     }
 
     public double getDivisionResult() {
-        if (secondNumber == 0) {
+        if (this.secondNumber == 0) {
             return 0;
         }
-        return firstNumber / secondNumber; 
+        return this.firstNumber / this.secondNumber; 
     }
 
 }
