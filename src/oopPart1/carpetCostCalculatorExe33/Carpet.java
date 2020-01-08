@@ -5,11 +5,6 @@ public class Carpet {
 
     public Carpet(double cost) {
         // this.cost = cost;
-
-        setCost(cost);
-    }
-
-    public void setCost(double cost) {
         if (cost < 0) {
             this.cost = 0;
         } else {
