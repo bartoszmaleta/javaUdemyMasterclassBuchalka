@@ -12,7 +12,13 @@ public class Car {
     private String colour;
 
     public void setModel(String model) {
-        this.model = model;
+        String validModel = model.toLowerCase();
+        if (validModel.equals("carrera") || validModel.equals("leon")) {
+            this.model = model;
+        } else {
+            this.model = "Unknown";
+        }
+        // this.model = model;
     }
 
     public String getModel() {
