@@ -4,7 +4,7 @@ public class ElectricCar extends Car {
     private int batteries;
     private int energy;
 
-    public ElectricCar (int batteries, int energy, String name, int size, String colour, boolean hasFuel, int speed) {
+    public ElectricCar (int batteries, int energy, String name, int size, String colour, boolean isOn, int speed) {
         super(name, size, colour, 4, false, speed);
         this.batteries = batteries;
         this.energy = energy;
@@ -17,8 +17,11 @@ public class ElectricCar extends Car {
             super.move(speedToChange);
             System.out.println("ElectricCar speed changed by " + speedToChange);
             System.out.println("ElectricCar is now moving at " + getSpeed());
+            
+            System.out.println("You had " + this.energy + "energy");
             this.energy -= 10;
             System.out.println("You used 10 energy.");
+            System.out.println("You have " + this.energy + "energy left");
         }
     }
 
