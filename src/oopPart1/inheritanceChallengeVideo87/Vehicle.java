@@ -4,11 +4,13 @@ public class Vehicle {
     private String name;
     private int size;
     private int engine;
+    private String colour;
 
-    public Vehicle(String name, int size, int engine) {
+    public Vehicle(String name, int size, int engine, String colour) {
         this.name = name;
         this.size = size;
         this.engine = engine;
+        this.colour = colour;
     }
 
     public void move(int speed) {
@@ -37,5 +39,13 @@ public class Vehicle {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getColour() {
+        return colour;
+    }
+
+    public void setColour(String colour) {
+        this.colour = colour;
     }
 }
