@@ -12,7 +12,11 @@ public class Vehicle {
         this.size = size;
         this.engine = engine;
         this.colour = colour;
-        this.speed = speed;
+        if (this.speed >= 0) {
+            this.speed = speed;
+        } else {
+            this.speed = 0;
+        }
     }
 
     public void move(int speedToChange) {
