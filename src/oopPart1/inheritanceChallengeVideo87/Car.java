@@ -2,12 +2,12 @@ package oopPart1.inheritanceChallengeVideo87;
 
 public class Car extends Vehicle {
     private int wheels;
-    boolean hasFuel;
+    boolean isOn;
 
     public Car(String name, int size, String colour, int wheels, boolean hasFuel, int speed) {
         super(name, size, 1, colour, speed);
         this.wheels = wheels;
-        this.hasFuel = hasFuel;
+        this.isOn = hasFuel;
     }
 
     public void handSteering() {
@@ -23,15 +23,15 @@ public class Car extends Vehicle {
     }
 
     @Override
-    public void move(int speed) {
-        if (hasFuel == true) {
-            System.out.println("Car.move() called. Car is moving at " + speed);
+    public void move(int speedToChange) {
+            System.out.println("Car.move() called. Car's speed changed by " + speedToChange);
             handSteering();
             changingGeers();
             drives();
-            super.move(speed);
-        }
+            super.move(speedToChange);
     }
+
+    
     // public String getColour() {
     // return colour;
     // }
