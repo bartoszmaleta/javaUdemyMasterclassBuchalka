@@ -21,5 +21,12 @@ public class ElectricCar extends Car {
             System.out.println("You used 10 energy.");
         }
     }
+
+    public void breaks(int speedToChange) {
+        System.out.println("ElectricCar.breaks() called. Electric car was moving at " + getSpeed());
+        super.move(speedToChange);
+        System.out.println("ElectricCar speed changed by " + speedToChange);
+        System.out.println("ElectricCar is now moving at " + getSpeed());
+    }
     
 }
