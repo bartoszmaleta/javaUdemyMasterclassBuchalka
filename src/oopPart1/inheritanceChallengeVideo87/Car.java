@@ -1,13 +1,11 @@
 package oopPart1.inheritanceChallengeVideo87;
 
 public class Car extends Vehicle {
-    private String colour;
     private int wheels;
     boolean hasFuel;
 
-    public Car(int size, String colour, int wheels, boolean hasFuel) {
-        super(size, 1);
-        this.colour = colour;
+    public Car(String name, int size, String colour, int wheels, boolean hasFuel, int speed) {
+        super(name, size, 1, colour, speed);
         this.wheels = wheels;
         this.hasFuel = hasFuel;
     }
