@@ -12,7 +12,7 @@ public class Vehicle {
         this.size = size;
         this.engine = engine;
         this.colour = colour;
-        if (this.speed >= 0) {
+        if (speed >= 0) { // without "this." ?????
             this.speed = speed;
         } else {
             this.speed = 0;
