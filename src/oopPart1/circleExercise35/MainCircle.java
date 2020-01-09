@@ -2,11 +2,17 @@ package oopPart1.circleExercise35;
 
 public class MainCircle {
     public static void main(String[] args) {
-        Circle circle = new Circle(3.0);
+        Circle circle = new Circle(3.75);
 
-        Cylinder cylinder = new Cylinder(-1.0, -1.0);
+        System.out.println("circle.radius= " + circle.getRadius());
+        System.out.println("circle.area= " + circle.getArea());
 
-        System.out.println(cylinder.getVolume());
-        System.out.println(cylinder.getHeight());
+        Cylinder cylinder = new Cylinder(5.55, 7.25);
+
+        System.out.println("cylinder.radius= " + cylinder.getRadius());
+        System.out.println("cylinder.radius= " + cylinder.getHeight());
+        System.out.println("cylinder.radius= " + cylinder.getArea());
+        System.out.println("cylinder.radius= " + cylinder.getVolume());
+
     }
 }
