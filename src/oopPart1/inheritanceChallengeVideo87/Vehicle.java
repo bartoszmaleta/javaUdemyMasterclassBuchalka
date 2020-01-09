@@ -20,9 +20,9 @@ public class Vehicle {
     }
 
     public void move(int speedToChange) {
-        System.out.println("Vehicle.move() called. Vehicle is moving at " + speed);
+        System.out.println("Vehicle.move() called. Vehicle was moving at " + this.speed);
         this.speed += speedToChange;
-        System.out.println("Speed of Vehicle changed by " + speedToChange);
+        System.out.println("Vehicle's speed changed by " + speedToChange);
     }
 
     public int getSize() {
