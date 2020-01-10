@@ -11,6 +11,7 @@ public class Printer {
         } else {
             this.tonerLever = -1; 
         }
+        // this.numberOfPagesPrinted = numberOfPagesPrinted;
         this.numberOfPagesPrinted = 0;
         this.duplexPrinter = duplexPrinter;
     }
