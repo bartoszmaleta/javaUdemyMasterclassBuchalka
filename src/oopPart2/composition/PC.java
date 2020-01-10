@@ -1,5 +1,7 @@
 package oopPart2.composition;
 
+// uncomment lines to make it more public!
+
 public class PC {
     private Case theCase;
     private Monitor monitor;
@@ -23,15 +25,15 @@ public class PC {
         monitor.drawPixelAt(1200, 50, "yellow");
     }
 
-    // private Case getTheCase() {
+    // public Case getTheCase() {
     //     return theCase;
     // }
 
-    // private Monitor getMonitor() {
+    // public Monitor getMonitor() {
     //     return monitor;
     // }
 
-    // private Motherboard getMotherboard() {
+    // public Motherboard getMotherboard() {
     //     return motherboard;
     // }
 
