@@ -6,5 +6,9 @@ public class MainCompositionExample {
         
         Case theCase = new Case("220B", "Dell", "240", dimensions);
 
+
+
+        Monitor monitor = new Monitor("27inch Beast", "Acer", 27, new Resolution(2540, 1440));
+
     }
 }
