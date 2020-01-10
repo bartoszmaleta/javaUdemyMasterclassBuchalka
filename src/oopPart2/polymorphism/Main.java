@@ -49,6 +49,7 @@ class StarWars extends Movie {
     public StarWars() {
         super("Star Wars");
     }
+
     @Override
     public String plot() {
         return "Imperial Forces try to take over the universe";
@@ -66,5 +67,34 @@ class Forgetable extends Movie {
 public class Main {
     public static void main(String[] args) {
 
+    }
+
+    public static Movie randomMovie() {
+        // Math.random() return double by default! thats why (int)
+        // Math.radnom() - radnom number between 0 and 1
+        int randomNumber = (int) (Math.random() * 5 + 1);
+        System.out.println("Random number generated was: " + randomNumber);
+        switch (randomNumber) {
+        case 1:
+            return new Jaws();
+        // no need for break because there is "return"!!!!!
+
+        case 2:
+            return new IndependenceDay();
+
+        case 3:
+            return new MazeRunner();
+
+        case 4:
+            return new StarWars();
+
+        case 5:
+            return new Forgetable();
+        
+        // default: 
+            // return null;
+        // or
+        }
+        return null;
     }
 }
