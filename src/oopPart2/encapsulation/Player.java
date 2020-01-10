@@ -1,7 +1,7 @@
 package oopPart2.encapsulation;
 
 public class Player {
-    public String name;
+    public String fullName;
     public int health;
     public String weapon;
 
@@ -17,5 +17,5 @@ public class Player {
         return this.health;
     }
 
-    
+
 }
