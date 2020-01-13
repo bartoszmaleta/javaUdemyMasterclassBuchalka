@@ -58,4 +58,12 @@ public class ArraysChallenge {
         }
         return sortedArray;
     }
+
+
+    // ANOTHER OPTION OF COPYING ARRAY
+    public static int[] copyOfArray(int[] arrayToSort) {
+        int[] values = Arrays.copyOf(arrayToSort, arrayToSort.length);
+
+        return values;
+    }
 }
