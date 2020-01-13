@@ -8,20 +8,54 @@ public class ArraysChallenge {
 
     public static void main(String[] args) {
         int[] myArray = getIntegers(5);
-        for (int i = 0; i < myArray.length; i++) {
-            System.out.println("Element " + i + ") typed value was = " + myArray[i]);
-        }
+        printArray(myArray);
+
+        System.out.println("-----------");
+
+        int[] sortedArray = sortIntegers(myArray);
+        printArray(sortedArray);
 
     }
 
-    public static int[] getIntegers(int number) {
-        System.out.println("Enter " + number + " integer elements: ");
-        int[] values = new int[number];
+    public static int[] getIntegers(int capacity) {
+        int[] values = new int[capacity];
+        System.out.println("Enter " + capacity + " integer elements: ");
 
         for (int i = 0; i < values.length; i++) {
             values[i] = scanner.nextInt();
             scanner.nextLine();
         }
         return values;
+    }
+
+    public static void printArray(int[] arrayToPrint) {
+        for (int i = 0; i < arrayToPrint.length; i++) {
+            System.out.println("Element " + i + ") typed value was = " + arrayToPrint[i]);
+        }
+    }
+
+    public static int[] sortIntegers(int[] arrayToSort) {
+        int[] sortedArray = new int[arrayToSort.length];
+        for (int i = 0; i < arrayToSort.length - 1; i++) {
+            sortedArray[i] = arrayToSort[i];
+        }
+
+        boolean flag = true;
+        int temporarilyVariable;
+        while (flag) {
+            flag = false;
+            // element 0 160
+            // element 1 50
+            // element 2 40
+            for (int i = 0; i < sortedArray.length - 1; i++) {
+                if (sortedArray[i] < sortedArray[i + 1]) {
+                    temporarilyVariable = sortedArray[i];
+                    sortedArray[i] = sortedArray[i + 1];
+                    sortedArray[i + 1] = temporarilyVariable;
+                    flag = true;
+                }
+            }
+        }
+        return sortedArray;
     }
 }
