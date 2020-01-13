@@ -30,11 +30,15 @@ public class ReferenceTypes101 {
         System.out.println("after change anotherArray = " + Arrays.toString(anotherArray));
 
         System.out.println("-----------");
-        anotherArray = new int[] {4, 5, 6, 7, 8};
         modifyArray(myIntArray);
         System.out.println("after modify myIntArray = " + Arrays.toString(myIntArray));
         System.out.println("after modify anotherArray = " + Arrays.toString(anotherArray));
 
+        System.out.println("-----------");
+        anotherArray = new int[] {4, 5, 6, 7, 8};
+        modifyArray(myIntArray);
+        System.out.println("after modify myIntArray = " + Arrays.toString(myIntArray));
+        System.out.println("after modify anotherArray = " + Arrays.toString(anotherArray));
     }
 
     private static void modifyArray(int[] arrayToModify) {
