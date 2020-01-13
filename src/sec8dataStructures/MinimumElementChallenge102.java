@@ -1,5 +1,6 @@
 package sec8dataStructures;
 
+import java.util.Arrays;
 import java.util.Scanner;
 
 public class MinimumElementChallenge102 {
@@ -12,27 +13,32 @@ public class MinimumElementChallenge102 {
 
         while (counter < 1) {
             int order = counter + 1;
-            System.out.println("Enter number of elements in the array " + order + ":");
+            System.out.println("Enter number of elements:");
 
             boolean isAnInt = scanner.hasNextInt();
+
             if (isAnInt) {
                 count = scanner.nextInt();
-                // count = (int) Integer.parseInt(count);
                 counter++;
             } else {
-                System.out.println("Error! Input is not a int");
+                System.out.println("Invalid Number");
             }
-            scanner.nextLine();
+            scanner.nextLine(); // handle end of line (enter key)
         }
+
         System.out.println(count);
         int[] integersInputted = readIntegers(count);
+
         printArray(integersInputted);
+
+        int minValue = findMin(integersInputted);
+        System.out.println("Minimmum value = " + minValue);
     }
 
     public static int[] readIntegers(int count) {
         int[] arrayOfIntegersEntered = new int[count];
-        System.out.println("Enter " + count + " integer elements: ");
         for (int i = 0; i < arrayOfIntegersEntered.length; i++) {
+            System.out.println("Enter a number: ");
             arrayOfIntegersEntered[i] = scanner.nextInt();
             scanner.nextLine();
         }
@@ -45,8 +51,14 @@ public class MinimumElementChallenge102 {
         }
     }
 
-    public static int findMin(int[] array) {
-        int minValue = 0;
-        return minValue;
+    private static int findMin(int[] array) {
+        int min = Integer.MAX_VALUE;
+        for (int i = 0; i < array.length; i++) {
+            int value = array[i];
+            if (value < min) {
+                min = value;
+            }
+        }
+        return min;
     }
 }
