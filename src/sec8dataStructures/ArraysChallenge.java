@@ -36,6 +36,8 @@ public class ArraysChallenge {
 
     public static int[] sortIntegers(int[] arrayToSort) {
         int[] sortedArray = new int[arrayToSort.length];
+        
+        // copy array
         for (int i = 0; i < arrayToSort.length - 1; i++) {
             sortedArray[i] = arrayToSort[i];
         }
