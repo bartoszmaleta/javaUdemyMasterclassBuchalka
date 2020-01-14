@@ -43,6 +43,10 @@ public class ArrayListExample104Video {
                 break;
 
             case 6:
+                processArrayList();
+                break;
+
+            case 7:
                 quit = true;
                 break;
             }
@@ -50,7 +54,7 @@ public class ArrayListExample104Video {
     }
 
     public static void printInstructions() {
-        System.out.print ("\n Press ");
+        System.out.print("\n Press ");
         System.out.print("\n 0 - To print choice options.");
         System.out.print("\n 1 - To print the list of grocery items.");
         System.out.print("\n 2 - To add an item to the list.");
@@ -87,5 +91,14 @@ public class ArrayListExample104Video {
         } else {
             System.out.println(searchItem + " is not in the shopping list");
         }
+    }
+
+    public static void processArrayList() {
+        // OPTION ONE TO COPY LIST:
+        ArrayList<String> newArray = new ArrayList<>();
+        newArray.addAll(groceryList.getGroceryList());
+
+        // OPTION TWO TO COPY LIST:
+        ArrayList<String> nextArray = new ArrayList<>(groceryList.getGroceryList());
     }
 }

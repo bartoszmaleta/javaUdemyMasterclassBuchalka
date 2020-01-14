@@ -6,6 +6,11 @@ public class GroceryList {
     private int[] myNumbers = new int[50];
     private ArrayList<String> groceryList = new ArrayList<String>();
 
+
+    public ArrayList<String> getGroceryList() {
+        return groceryList;
+    }
+
     public void addGroceryItem(String item) {
         groceryList.add(item);
     }
