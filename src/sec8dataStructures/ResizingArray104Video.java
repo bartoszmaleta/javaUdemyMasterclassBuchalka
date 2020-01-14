@@ -7,7 +7,16 @@ public class ResizingArray104Video {
     private static int[] baseData = new int[10];
     public static void main(String[] args) {
         System.out.println("Enter 10 integers: ");
+        getInput();
+        printArray(baseData);
+        resizeArray();
+        System.out.println("Enter 12 integers: "); // comment this for second option
+        getInput();                                // comment this for second option
+        // baseData[10] = 67;
+        // baseData[11] = 34;
+        printArray(baseData);
 
+        
     }
 
     private static void getInput() {
@@ -18,7 +27,7 @@ public class ResizingArray104Video {
 
     private static void printArray(int[] arrayToPrint) {
         for (int i = 0; i < arrayToPrint.length; i++) {
-            System.out.println(arrayToPrint[i] + " ");
+            System.out.print (arrayToPrint[i] + " ");
         }
         System.out.println();
     }
