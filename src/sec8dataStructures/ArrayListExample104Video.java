@@ -2,6 +2,7 @@ package sec8dataStructures;
 
 import java.util.ArrayList;
 import java.util.Scanner;
+// next class in GroceryList.java
 
 public class ArrayListExample104Video {
 
@@ -100,5 +101,9 @@ public class ArrayListExample104Video {
 
         // OPTION TWO TO COPY LIST:
         ArrayList<String> nextArray = new ArrayList<>(groceryList.getGroceryList());
+
+        // OPTION TO CONVERT ARRAYLIST:
+        String[] myArray = new String[groceryList.getGroceryList().size()];
+        myArray = groceryList.getGroceryList().toArray(myArray); 
     }
 }
