@@ -83,7 +83,7 @@ System.out.println("---------------");
         // UNBOXING! ArrayList<Double> to double
         for (int i = 0; i < myDoubleValues.size(); i++) {
             double value = myDoubleValues.get(i).doubleValue();
-            // same thing:
+            // same thing:   
             // double value = myDoubleValues.get(i);
             System.out.println(i + " -----> " + value);
         }
