@@ -36,9 +36,6 @@ public class BankAccount {
 
     public BankAccount(String customerName, String customerEmail, String customerPhoneNumber) {
         this("9999", 100.55, customerName, customerEmail, customerPhoneNumber);
-        this.customerName = customerName;
-        this.customerEmail = customerEmail;
-        this.customerPhoneNumber = customerPhoneNumber;
     }
 
     public String getAccountNumber() {
