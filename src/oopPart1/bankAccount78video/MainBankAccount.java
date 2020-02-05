@@ -55,6 +55,7 @@ public class MainBankAccount {
 
         VipCustomer customerVip2 = new VipCustomer("John", "johns@email.com");
         System.out.println(customerVip2.getName());
+        System.err.println(customerVip2.getCreditLimit());
 
         VipCustomer customerVip3 = new VipCustomer("Tom", 130.00, "toms@email.com");
         System.out.println(customerVip3.getName());

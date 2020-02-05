@@ -11,8 +11,6 @@ public class VipCustomer {
 
     public VipCustomer(String name, String email) {
         this(name, 100, email);
-        this.name = name;
-        this.email = email;
     }
 
     public VipCustomer(String name, double creditLimit, String email) {

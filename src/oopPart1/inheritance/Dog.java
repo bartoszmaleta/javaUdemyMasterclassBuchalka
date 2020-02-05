@@ -18,6 +18,11 @@ public class Dog extends Animal {
         this.coat = coat;
     }
 
+    // ONLY INHERITED
+    public Dog(String name, int brain, int body, int size, int weight) {
+        super(name, brain, body, size, weight);
+    }
+
     private void chew() {
         System.out.println("Dog.chew() called");
     }
@@ -49,6 +54,8 @@ public class Dog extends Animal {
         moveLegs(speed);
         super.move(speed);
     }
+
+
 
     
 }

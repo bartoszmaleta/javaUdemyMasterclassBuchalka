@@ -81,7 +81,7 @@ public class Main {
     public static Movie randomMovie() {
         // Math.random() return double by default! thats why (int)
         // Math.radnom() - radnom number between 0 and 1
-        int randomNumber = (int) (Math.random() * 5 + 1);
+        int randomNumber = (int) (Math.random() * 5) + 1;
         System.out.println("Random number generated was: " + randomNumber);
         switch (randomNumber) {
         case 1:
