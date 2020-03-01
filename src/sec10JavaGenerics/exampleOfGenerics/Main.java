@@ -8,11 +8,18 @@ public class Main {
         BaseballPlayer pat = new BaseballPlayer("Pat");
         SoccerPlayer messi = new SoccerPlayer("Messi");
 
-        Team fcBarcelona = new Team("FC Barcelona");
-        fcBarcelona.addPlayer(brady);
-        fcBarcelona.addPlayer(pat);
+        Team<SoccerPlayer> fcBarcelona = new Team<>("FC Barcelona");
+//        fcBarcelona.addPlayer(brady);
+//        fcBarcelona.addPlayer(pat);
         fcBarcelona.addPlayer(messi);
 
         System.out.println(fcBarcelona.numPlayers());
+
+        Team<BaseballPlayer> baseballTeam = new Team<>("Chicago Cubs");
+        baseballTeam.addPlayer(pat);
+
+        Team<FootballPlayer> footballTeam = new Team<>("New England Patriots");
+        footballTeam.addPlayer(brady);
+
     }
 }
