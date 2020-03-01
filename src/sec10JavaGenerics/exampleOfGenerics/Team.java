@@ -1,9 +1,10 @@
 package sec10JavaGenerics.exampleOfGenerics;
 
 import java.util.ArrayList;
+import java.util.Comparator;
 import java.util.List;
 
-public class Team<T extends Player> {
+public class Team<T extends Player> implements Comparable<Team<T>> {
 //public class Team<T extends Player & Coach & Manager> {
     // class first, then interfaces (Player - class, Coach and Manager - Interfaces
     private String name;
@@ -61,5 +62,16 @@ public class Team<T extends Player> {
 
     public int ranking() {
         return (won * 3) + tied;
+    }
+
+    @Override
+    public int compareTo(Team<T> team) {
+        if (this.ranking() > team.ranking()) {
+            return -1;
+        } else if (this.ranking() < team.ranking()) {
+            return 1;
+        } else {
+            return 0;
+        }
     }
 }

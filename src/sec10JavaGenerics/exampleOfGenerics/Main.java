@@ -2,6 +2,8 @@ package sec10JavaGenerics.exampleOfGenerics;
 
 import com.sun.source.tree.Scope;
 
+import java.util.List;
+
 public class Main {
     public static void main(String[] args) {
         FootballPlayer brady = new FootballPlayer("Brady");
@@ -32,6 +34,19 @@ public class Main {
         realMadrid.matchResult(fcBarcelona, 1, 4);
 //        Won't work, because of generics method!
 //        fcBarcelona.matchResult(baseballTeam, 2, 3);
+
+        System.out.println("Rankings");
+        System.out.println(fcBarcelona.getName() + ": " + fcBarcelona.ranking());
+        System.out.println(realMadrid.getName() + ": " + realMadrid.ranking());
+        System.out.println(manchesterUnited.getName() + ": " + manchesterUnited.ranking());
+
+        System.out.println("-----------------------------");
+        System.out.println(fcBarcelona.compareTo(realMadrid));
+        System.out.println(manchesterUnited.compareTo(fcBarcelona));
+
+        System.out.println("-----------------------------");
+
+
 
     }
 }
