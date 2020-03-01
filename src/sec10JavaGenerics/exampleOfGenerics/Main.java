@@ -30,7 +30,8 @@ public class Main {
 
         realMadrid.matchResult(manchesterUnited, 0, 3);
         realMadrid.matchResult(fcBarcelona, 1, 4);
-
+//        Won't work, because of generics method!
+//        fcBarcelona.matchResult(baseballTeam, 2, 3);
 
     }
 }
