@@ -21,5 +21,16 @@ public class Main {
         Team<FootballPlayer> footballTeam = new Team<>("New England Patriots");
         footballTeam.addPlayer(brady);
 
+        Team<SoccerPlayer> realMadrid = new Team<>("CF Real Madrid");
+        Team<SoccerPlayer> manchesterUnited = new Team<>("Manchester United");
+
+        System.out.println("-----------------------------");
+        fcBarcelona.matchResult(manchesterUnited, 0, 0);
+        fcBarcelona.matchResult(realMadrid, 2, 0);
+
+        realMadrid.matchResult(manchesterUnited, 0, 3);
+        realMadrid.matchResult(fcBarcelona, 1, 4);
+
+
     }
 }
